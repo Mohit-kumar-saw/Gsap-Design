@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  flex-direction: column;
+  
+}
+
+.nav {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  
+}
+
+.nav > h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.nav .part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .part2 a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  transition:all  ease;
+padding: 5px;}
+
+.nav .part2 a:hover{
+  border-bottom: 3px solid springgreen;
+
+}
+
+.nav .part2 > a:nth-last-child(1) {
+  background-color: rgb(229, 229, 234);
+  padding: 10px 18px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+
+  
+}
+
+
+.nav .part2 > a:nth-last-child(1) .green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 50px;
+transition: left 0.4s ease;
+
+}
+
+.nav .part2 > a:nth-last-child(1) p{
+    position: relative;
+    z-index: 99;
+   
+}
+
+.nav .part2 > a:nth-last-child(1):hover .green{
+    left: 0;
+}
+
+.main>h1{
+  font-size: 5vw;
+  width: 60%;
+  font-weight: 100;
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+
+
+
+.main .img1{
+  height: 350px;
+  width: 250px;
+  position: absolute;
+  left: 13%;
+  top: 20%;
+  object-fit: cover;
+
+}
+.main .img2{
+  height: 230px;
+  width: 270px;
+  position: absolute;
+  right: 25%;
+  top: 20%;
+  object-fit: cover;
+
+}
+.main .img3{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  object-fit: cover;
+}
+
+.main img{
+  transition: margin 0.8s ease;
+}
+
+.main img:hover{
+  margin-top: -20px;
+}
+.main .img3:hover{
+  margin-bottom: 20px;
+  
+}
+.test{
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  border-radius: 30px;
+}
+
+.btn{
+  width: 100px;
+height: 40px;  font-size: larger;
+  border-radius: 30px;
+  overflow: hidden;
+ border: 1px solid;
+}
+.green2{
+  width: 100px;
+  position: absolute;
+  
+  height: 40px;
+  border-radius: 30px;
+  background-color: springgreen;
+  top: 0;
+  left: 100%;
+  transition: left 0.4s ease;
+
+}
+
+.btn:hover .green2{
+  left: 0;
+}
+
+.btn p{
+  z-index: 99;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title img{
+  width: 250px;
+  height: 20px;
+  position: absolute;
+  bottom: -1%;
+  right: 35%;
+  z-index: -1;
+}
+
+/* .img3:hover{
+  top: 62%;
+transition: margin 0.8s ease;}
+
+ */
+
+
+
+
